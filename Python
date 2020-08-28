@@ -1,0 +1,4 @@
+ho=input('hours?: ')
+ra=input('rate?: ')
+pay=float(ho) * float(ra)
+print('payment',pay)
