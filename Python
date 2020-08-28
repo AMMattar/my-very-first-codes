@@ -2,3 +2,17 @@ ho=input('hours?: ')
 ra=input('rate?: ')
 pay=float(ho) * float(ra)
 print('payment',pay)
+
+now im adding some try and expect to fix if someone does'nt add numeric number
+
+ho=input('hours?: ')
+ra=input('rate?: ')
+import sys
+try:
+    float(ho)
+    float(ra)
+except: 
+    print('please add a numeric number')
+    sys.exit(0)
+pay=float(ho)*float(ra) 
+print('payment',pay)
